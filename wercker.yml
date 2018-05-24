@@ -1,4 +1,5 @@
 box: debian
+
 build:
   steps:
     - script:
@@ -6,3 +7,6 @@ build:
         code: |
           echo "hello world!"
           echo $WERCKER_ROOT
+    - internal/docker-build:
+	  dockerfile: Dockerfile
+	  image-name: my-new-image
