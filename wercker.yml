@@ -8,5 +8,5 @@ build:
           echo "hello world!"
           echo $WERCKER_ROOT
     - internal/docker-build:
-	    dockerfile: Dockerfile
-	    image-name: my-new-image
+        dockerfile: Dockerfile
+        image-name: my-new-image
